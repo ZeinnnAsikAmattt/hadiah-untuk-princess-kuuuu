@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b9d7f2; /* Warna biru langit pastel senada dengan desainmu */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#welcome-screen {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Gradasi warna langit pagi yang estetik */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.welcome-box {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 90%;
+}
+
+.welcome-box h1 { color: #4a90e2; margin-bottom: 10px; } /* Tulisan biru kalem */
+.welcome-box p { color: #555; margin-bottom: 25px; }
+
+#start-btn {
+    background-color: #4a90e2; /* Tombol biru matching */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+#start-btn:hover { transform: scale(1.05); }
+
+.flipbook-container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.page img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
